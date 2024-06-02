@@ -16,6 +16,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body id="page-top">
@@ -30,9 +35,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">介紹</a></li>
+                    <!--li class="nav-item"><a class="nav-link" href="#portfolio">介紹</a></li>
                     <li class="nav-item"><a class="nav-link" href="#difference">區別</a></li>
                     <li class="nav-item"><a class="nav-link" href="#advantage&disadvantage">優缺點</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">歷史線</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#country">國家</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="#introduction">介紹</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#difference">區別</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#advantage and disadvantage">優缺點</a></li>
                     <li class="nav-item"><a class="nav-link" href="#history">歷史線</a></li>
                     <li class="nav-item"><a class="nav-link" href="#country">國家</a></li>
                     <div class="dropdown">
@@ -75,7 +85,7 @@
                     <div class="picture"><img class="rounded-circle img-fluid" src="assets/img/goddess.png"
                             alt="goddess" /></div>
                     <h4 class="my-3">民主主義</h4>
-                    <p class="text-muted">
+                    <p class="text-muted p15">
                         民主主義是根據「人民的意志」（來源）和「公益」（目的）來界定民主，其核心理念是政府的權力是來自人民，政府的運作和決策是通過公開的選舉和民意表達實現的。在民主主義中，政府通常由公民選舉產生，並受憲法和法律約束，以確保政府行使權力的合法性和公正性。民主主義還包括言論自由、新聞自由、結社自由等基本權利的保障，並且通過權力分立的原則來防止權力濫用，確保政府的責任和透明度。總的來說，民主主義強調公民參與、政府責任和權利保障，是一種基於人民意志和價值觀的政治體制。
                     </p>
                 </div>
@@ -83,7 +93,7 @@
                     <div class="picture"><img class="rounded-circle img-fluid"
                             src="assets/img/authoritarian regimes.jpg" alt="authoritarian regimes" /></div>
                     <h4 class="my-3">共產主義</h4>
-                    <p class="text-muted">
+                    <p class="text-muted p15">
                         共產主義是一種意識形態和政治體制，其核心理念是實現無階級社會和生產資料的公有化。在共產主義下，政府通常由共產黨或共產主義政黨領導，政府和經濟活動由政黨控制。共產主義強調實現社會主義制度，即國家控制生產和資源，實行計劃經濟，強調公有制和分配制度。此外，共產主義還強調階級鬥爭，認為歷史發展的最終階段是無產階級革命，並建立無私有財產和階級的社會。總的來說，共產主義是一種基於無產階級統治、公有制和階級消滅的政治體制和意識形態。
                     </p>
                 </div>
@@ -93,55 +103,289 @@
             </div>
         </div>
     </section>
-    <!-- 區別-->
-    <section class="page-section" id="difference">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">民主主義&共產主義區別</h2>
-                <h3 class="section-subheading text-muted">The difference between Democratic and liberal regimes &
-                    Authoritarian regimes</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+    <<!-- 區別-->
+        <section class="page-section" id="difference">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase mb-3">民主主義&共產主義區別</h2>
+                    <h3 class="section-subheading text-muted mb-3">The difference between Democratic and liberal regimes
+                        & Authoritarian regimes</h3>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                <div class="row">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                        data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">概念</h5>
+                                        <p class="demo">
+                                            以人民為本，管理者辭去工作後與平民無異，推舉出來的人有政績才能有機會延續管理工作，否則被淘汰，法律賦予人民有個人發言權，有新聞出版等自由
+                                            *以服務來管理人民
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">概念</h5>
+                                        <p class="comm">
+                                            號稱以國家為主，實際上是以少數管理者的利益為主，所有人都必須為他們犧牲奉獻，形成奴隸文化，人民沒有個人發言權，無新聞出版等自由
+                                            *以控制來管理人民
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">監控管理者機制</h5>
+                                        <p class="demo">
+                                            人民可透過選舉罷免監督管理者
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">監控管理者機制</h5>
+                                        <p class="comm">
+                                            無法監督（同封建時代）
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">管理者做不好時</h5>
+                                        <p class="demo">
+                                            用選舉罷免就能換掉
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">管理者做不好時</h5>
+                                        <p class="comm">
+                                            人民無法反抗，或是要用性命來推翻政權才能換掉管理者
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">管理者權力</h5>
+                                        <p class="demo">
+                                            雖然在少數人手中，但容易被替換
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">管理者權力</h5>
+                                        <p class="comm">
+                                            在少數特權人手中，很難被替換，會導致攀附文化
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">法律</h5>
+                                        <p class="demo">
+                                            必須通過立法單位多次審議才能通過
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">法律</h5>
+                                        <p class="comm">
+                                            法律是依照管理者的喜好訂定必
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">情況</h5>
+                                        <p class="demo">
+                                            資本主義，但會衍生貧富不均，可以透過課富人稅降窮人稅，或是福利等政策彌補窮人
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">情況</h5>
+                                        <p class="comm">
+                                            中央集權封建主義，造成貧富不均，特權者享受一般人的供養並享受特權，因為無法糾正管理者，所以到最後幾乎演變成戰亂
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">加入後可能的犧牲</h5>
+                                        <p class="demo">
+                                            ·不會有犧牲
+                                            <br>·部分的人為經濟困擾
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">加入後可能的犧牲</h5>
+                                        <p class="comm">
+                                            ·財產和性命
+                                            <br>·大多為經濟困擾，且為生命困擾
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">人民保障</h5>
+                                        <p class="demo">
+                                            管理者可以隨時透過修改法律定你的罪或是把你的財產沒收，沒有任何保障
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">人民保障</h5>
+                                        <p class="comm">
+                                            管理者可以隨時透過修改法律定你的罪或是把你的財產沒收，沒有任何保障
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">人民反抗</h5>
+                                        <p class="demo">
+                                            雖然會有警民衝突，但不至於擴大成血腥鎮壓屠殺，管理者太過霸道會被人民用選票換掉
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">人民反抗</h5>
+                                        <p class="comm">
+                                            大規模血腥鎮壓屠殺，認為人民都是錯的
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <section class="col-md-4">
+                                        <h3 class="mb-3">民主主義</h3>
+                                        <h5 class="mb-2">政治動亂危機</h5>
+                                        <p class="demo">
+                                            動亂不會有太大太長之問題，因為主權在民，管理者的執政時間也有限
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <section class="col-md-4 leftline">
+                                        <h3 class="mb-3">共產主義</h3>
+                                        <h5 class="mb-2">政治動亂危機</h5>
+                                        <p class="comm">
+                                            透過血腥鎮壓屠殺來穩定政局，但一旦失控，造成極大死傷問題
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </p>
+                                    </section>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+        </section>
+
+        <!-- 優缺點-->
+        <section class="page-section" id="advantage and disadvantage">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">民主主義&共產主義優缺點</h2>
+                    <h3 class="section-subheading text-muted">The advantage and disadvantage between Democratic and
+                        liberal
+                        regimes & Authoritarian regimes</h3>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- 優缺點-->
-    <section class="page-section" id="advantage and disadvantage">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">民主主義&共產主義優缺點</h2>
-                <h3 class="section-subheading text-muted">The advantage and disadvantage between Democratic and liberal
-                    regimes & Authoritarian regimes</h3>
-            </div>
-            <div class="row text-center">
-                <!--
+                <div class="row text-center">
+                    <!--
                         <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -166,954 +410,1081 @@
                         <h4 class="my-3">Web Security</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     -->
-                <table class="table table-success">
-                    <tr>
-                        <th scope="col" style="width:25%">民主優點</th>
-                        <th scope="col">民主缺點</th>
-                        <th scope="col">共產優點</th>
-                        <th scope="col">共產缺點</th>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width:25%">1.維護人民利益</td>
-                        <td>1.數量偏好</td>
-                        <td>1.國家內部完全統一</td>
-                        <td>1.缺乏創造力和權力</td>
-                    </tr>
-                    <tr>
-                        <td style="width:25%">2.促進平等</td>
-                        <td>2.濫用資源</td>
-                        <td>2.平等待遇和報酬</td>
-                        <td>2.失去了決定及表達自由</td>
-                    </tr>
-                    <tr>
-                        <td style="width:25%">3.政治參與</td>
-                        <td>3.腐敗</td>
-                        <td>3.人民之間沒有階級差異</td>
-                        <td>3.普通市民缺乏產品和服務</td>
-                    </tr>
-                    <tr>
-                        <td>4.和平</td>
-                        <td>4.選擇的衝突</td>
-                        <td>4.財產平均分配</td>
-                        <td>4.競爭力下降</td>
-                    </tr>
-                    <tr>
-                        <td>5.權力共享</td>
-                        <td>5.效率較低</td>
-                        <td>5.紀律嚴明</td>
-                        <td>5.政治體制軍事化</td>
-                    </tr>
-                </table>
+                    <table class="table table-success table-striped table-hover">
+                        <tr>
+                            <th scope="col" style="width:25%">民主優點</th>
+                            <th scope="col">民主缺點</th>
+                            <th scope="col">共產優點</th>
+                            <th scope="col">共產缺點</th>
+                        </tr>
+                        <tr>
+                            <td scope="row" style="width:25%">1.維護人民利益</td>
+                            <td>1.數量偏好</td>
+                            <td>1.國家內部完全統一</td>
+                            <td>1.缺乏創造力和權力</td>
+                        </tr>
+                        <tr>
+                            <td style="width:25%">2.促進平等</td>
+                            <td>2.濫用資源</td>
+                            <td>2.平等待遇和報酬</td>
+                            <td>2.失去了決定及表達自由</td>
+                        </tr>
+                        <tr>
+                            <td style="width:25%">3.政治參與</td>
+                            <td>3.腐敗</td>
+                            <td>3.人民之間沒有階級差異</td>
+                            <td>3.普通市民缺乏產品和服務</td>
+                        </tr>
+                        <tr>
+                            <td>4.和平</td>
+                            <td>4.選擇的衝突</td>
+                            <td>4.財產平均分配</td>
+                            <td>4.競爭力下降</td>
+                        </tr>
+                        <tr>
+                            <td>5.權力共享</td>
+                            <td>5.效率較低</td>
+                            <td>5.紀律嚴明</td>
+                            <td>5.政治體制軍事化</td>
+                        </tr>
+                    </table>
 
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- 歷史線-->
-    <section class="page-section" id="history">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">歷史線</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Be Part
-                            <br />
-                            Of Our
-                            <br />
-                            Story!
-                        </h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- 國家-->
-    <section class="page-section bg-light" id="country">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
             </div>
-        </div>
-    </section>
-    <!--新聞-->
-    <section class="page-section bg-light" id="news">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">新聞</h2>
-                <h3 class="section-subheading text-muted">News about democracy and communism.</h3>
-            </div>
-        </div>
-    </section>
-    <!--深度報導-->
-    <section class="page-section bg-light" id="innews">
-        <div class="container">
-            <div class="text-left">
-                <h3 class="section-heading text-uppercase">深度報導</h3>
-                <div class="row mb-5">
-                    <hr size="5" align="center" noshade width="90%" color="0000ff">
+        </section>
+        <!-- 歷史線-->
+        <section class="page-section" id="history">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">歷史線</h2>
+                    <h3 class="section-subheading text-muted"><strong>民主政治歷史</strong></h3>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/a.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>史前部落</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>最早的民主形式可能是源於史前的部落。這些有著血緣和婚姻關係的人民部落，通常指派部落中最老的成員擔任領導人。當部落逐漸擴大時，便發展出了一種由各家族的長者共同統治的方式。這種過程開始與宗教產生連結，並且可能發展為民主或不民主的制度。然而，早期的政府可能的確存在民主制度。考古學也發現民主存在於美索不達米亞和腓尼基的小型國家中。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/b.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>古希臘</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>古希臘雅典是民主政治的發源地之一。在公元前5世紀，雅典實行了直接民主制度，公民可以直接參與政治決策和議事，這種制度在當時是相當先進的。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/c.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>羅馬共和</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>古羅馬的共和政治體制也具有一定程度的民主元素。在羅馬共和政治時期，公民享有一定程度的政治權利，並通過選舉和代表制度參與政治。 近代民主
+                                                近代民主的發展：現代民主政治的發展可以追溯到18世紀的美國和法國。美國在1776年獨立後建立了聯邦制度和憲政民主，成為世界上第一個現代民主國家。法國大革命時期（1789年至1799年）推動了法國的民主化進程，雖然其過程充滿了動盪和衝突，但也為民主政治的發展開辟了道路。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/d.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>19世紀民主運動</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>19世紀是民主政治進程的關鍵時期，許多國家開始實現民主制度的擴展和改革。歐洲和美國的工業革命為城市發展、社會變遷和政治參與提供了新的動力。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/e.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>20世紀民主擴展</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>20世紀見證了民主政治的進一步擴展和普及。兩次世界大戰後，許多殖民地國家獲得獨立，並開始建立民主政體。冷戰時期，民主制度和共產主義之間的意識形態對抗也推動了民主價值觀的擴展。
+                                                當代民主21世紀以來，民主政治在全球范圍內得到了普及和推廣，一些國家也在努力改革和完善其民主制度，以應對新的挑戰和需求。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/G.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>當代民主21世紀</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>21世紀以來，民主政治在全球范圍內得到了普及和推廣，一些國家也在努力改革和完善其民主制度，以應對新的挑戰和需求。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="col-6">
+                        <ul class="timeline timeline-alt">
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/a.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>馬克思主義的形成（19世紀中葉）
+                                            </em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>共產主義的理論基礎主要源自於卡爾·馬克思和弗里德里希·恩格斯的著作，特別是《共產黨宣言》。馬克思主義指出，歷史發展是階級鬥爭的結果，最終會導致無產階級革命，建立一個沒有私有財產和階級的社會。
+                                            </strong></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/b.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>俄國十月革命（1917年）</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>由列寧領導的布爾什維克黨在俄國發動了十月革命，推翻了沙俄的沙皇政權，建立了世界上第一個社會主義國家——蘇聯。這標誌著共產主義在世界上首次取得政權。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/c.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>蘇聯共產主義體制的建立（1917年至1991年）</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>蘇聯建立了一個由蘇共（布）領導的單一黨制度，國家控制了生產資料和經濟資源，實行計劃經濟和集體化農業。這一時期，蘇聯實行了一系列的政治鎮壓和大規模的工業化建設。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/d.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>共產主義在其他國家的擴張</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>蘇聯共產主義政權的建立激發了世界范圍內其他國家的共產主義運動。20世紀初至中葉，共產主義在歐洲、亞洲、非洲和拉丁美洲的許多國家出現，並在一些國家取得政權。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/e.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>冷戰時期（1945-1991年）</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>蘇聯和美國領導的資本主義西方世界之間展開了長達幾十年的冷戰。冷戰期間，蘇聯通過援助共產主義政權和進行意識形態宣傳來擴大自己的影響力。</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/G.jpg"
+                                        alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4><em>蘇聯解體（1991年）</em></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <strong>蘇聯於1991年解體，標誌著共產主義政權的終結。這一事件對世界格局和共產主義運動產生了深遠影響，許多共產主義國家轉向了市場經濟和民主制度。
+                                            </strong></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- 國家-->
+        <section class="page-section bg-light" id="country">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">相關國家</h2>
+                    <h3 class="section-subheading text-muted">Introduction to relevant countries.</h3>
+                </div>
+                <div class="row">
+                    <section class="col-md-6">
+                        <h3 class="tcenter mb-5">民主國家</h3>
+                        <!-- Button trigger modal -->
+                        <div class="row text-center">
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#america"><img
+                                        src="assets/img/country/america.jpg"></a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#norway"><img
+                                        src="assets/img/country/norway.jpg"></a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#newzealand"><img
+                                        src="assets/img/country/newzealand.jpg"></a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#sweden"><img
+                                        src="assets/img/country/sweden.jpg"></a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="america" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">美國</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">美國獨立和建國（1776-1789）：</strong><br>美國獨立戰爭於1776年爆發，美國於1776年7月4日宣布獨立，脫離了英國的統治。隨後，美國開始建立獨立的政治體系，並於1789年通過了美國憲法，建立了<span
+                                                class='greengreen'>聯邦制度和代議制民主政體</span>。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">憲政擴展（1791-1865）：</strong><br>在19世紀早期，美國通過了憲法修正案，包括美國憲法修正案中的第一至十項修正案（即美國憲法修正案中的《美國憲法的國民權利和自由宣言》），<span
+                                                class='greengreen'>保障了公民的基本權利和自由</span>。在這一時期，美國也經歷了西部擴張和奴隸制度的爭議，最終導致了南北戰爭。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">奴隸制度結束和重建時期（1865-1877）：</strong><br>南北戰爭結束後，<span
+                                                class='greengreen'>美國通過了奴隸制度的廢除憲法修正案</span>，並進行了重建時期，以重建南方各州的政治、經濟和社會結構。然而，在這一時期，南方仍然存在著種族隔離和歧視，這導致了民權運動的興起。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">進步時代（1890-1920）：</strong><br>進步時代是美國歷史上的一個重要時期，這一時期見證了許多社會和政治改革的實施，包括反壟斷法、勞工保護法、<span
+                                                class='greengreen'>婦女選舉權</span>、食品和藥物監管等。這一時期的改革對美國的民主政治和社會發展產生了深遠的影響。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">大蕭條和二戰時期（1929-1945）：</strong><br>大蕭條時期美國面臨經濟危機，但同時也促進了政府在經濟和社會方面的干預和改革。第二次世界大戰期間，<span
+                                                class='greengreen'>美國成為了世界上最強大的國家之一</span>，並在戰後成為世界的超級大國。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">冷戰時期和民權運動（1945-1989）：</strong><br>冷戰時期，美國和蘇聯之間的對抗對美國的政治和外交政策產生了深遠影響。同時，美國也面臨著內部的社會問題，包括種族歧視和社會不公。在這一時期，民權運動興起，<span
+                                                class='greengreen'>爭取非裔美國人和其他少數族裔的平等權利和機會</span>。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">當代美國（1990至今）：</strong><br>自1990年代以來，美國政治面臨了一系列挑戰和變革，包括全球化、恐怖主義、經濟不平等和政治極化等問題。同時，美國也見證了一系列重大事件，如911恐怖襲擊和金融危機，對美國政治和社會帶來了深遠的影響。
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="norway" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">挪威</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">早期統治與丹麥聯合（872-1814年）：</strong><br>挪威的早期歷史可以追溯到9世紀，當時哈拉爾一世（Harald
+                                            Fairhair）統一了挪威，成為首位挪威國王。13世紀，挪威與丹麥和瑞典形成了卡爾馬聯盟（Kalmar
+                                            Union），但在16世紀聯盟解體後，挪威成為丹麥的領土，這種統治關係一直持續到1814年。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">挪威憲法的誕生（1814年）：</strong><br>1814年，拿破崙戰爭結束後，根據《基爾條約》，挪威被割讓給瑞典。挪威人不滿這一安排，於1814年5月17日在艾茲沃爾（Eidsvoll）制定了憲法，宣告成立<span
+                                                class='greengreen'>獨立的挪威王國</span>。然而，瑞典隨後進軍挪威，迫使挪威接受與瑞典的聯合，但挪威保留了自己的憲法和相對自治權。憲法日（5月17日）至今仍是挪威的國慶日。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">瑞典-挪威聯合時期（1814-1905年）：</strong><br>在與瑞典的聯合時期，挪威逐漸發展了自己的<span
+                                                class='greengreen'>民主制度</span>。19世紀中期，挪威議會（Stortinget）的權力逐漸增強，並在1884年引入了議會制，確立了政府對議會的責任制。這一時期，挪威實現了<span
+                                                class='greengreen'>言論自由</span>、<span
+                                                class='greengreen'>新聞自由</span>和<span
+                                                class='greengreen'>組織自由</span>，為現代民主奠定了基礎。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">獨立與議會民主制的鞏固（1905-1945年）：</strong><br>1905年，挪威通過全民公投和平脫離了與瑞典的聯合，成為獨立國家，並選舉丹麥王子卡爾為國王，即哈康七世（Haakon
+                                            VII）。隨後，<span
+                                                class='greengreen'>挪威逐步鞏固了議會民主制度</span>。二戰期間，挪威被納粹德國佔領，但挪威抵抗運動和流亡政府在戰後重建了民主制度。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">戰後發展與社會民主主義（1945-1990年）：</strong><br>戰後，挪威進一步發展了<span
+                                                class='greengreen'>社會民主主義</span>，強調社會福利和經濟平等。挪威工黨（Arbeiderpartiet）在戰後多次執政，推動了廣泛的社會和經濟改革，包括全民醫療、教育和養老金制度。1960年代末，挪威發現了大量的北海油田，這為國家的經濟發展提供了強大支撐。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">當代挪威（1990年至今）：</strong><br>1990年代以來，<span
+                                                class='greengreen'>挪威在民主和經濟方面繼續保持穩定和發展</span>。挪威在全球擁有高水平的生活質量、社會福利和人權保障。挪威是聯合國、北約和歐洲自由貿易聯盟的成員，積極參與國際事務和維和行動。儘管兩次公投拒絕加入歐盟，挪威依然與歐盟保持緊密的經濟和政治關係。
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="newzealand" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">紐西蘭</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">早期毛利治理與歐洲殖民（14世紀-1840年）：</strong><br>在歐洲人到來之前，紐西蘭由毛利人（Māori）部落治理，每個部落有其酋長和長老會議來進行決策。1642年，荷蘭探險家阿貝爾·塔斯曼（Abel
+                                            Tasman）首次抵達紐西蘭，但沒有成功登陸。1769年，英國探險家詹姆斯·庫克（James Cook）到達並繪製了紐西蘭的地圖，開啟了歐洲人的定居潮。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">《懷唐伊條約》與英國殖民統治（1840-1852年）：</strong><br>1840年，英國與部分毛利部落簽署了《懷唐伊條約》（Treaty
+                                            of
+                                            Waitangi），該條約標誌著紐西蘭成為英國的殖民地。《懷唐伊條約》保證毛利人擁有其土地和資源的所有權，但實際執行中存在許多爭議和誤解，導致後來的衝突。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">自治與責任政府（1852-1907年）：</strong><br>1852年，英國頒布《紐西蘭憲法法令》（New
+                                            Zealand Constitution Act），設立了紐西蘭的議會制度，並在<span
+                                                class='greengreen'>1856年引入責任政府體制，實行內閣制，由民選議會控制政府</span>。這一時期，紐西蘭逐步獲得更大的自治權，並建立了現代民主政治的基礎。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">女性選舉權與社會改革（1893-1945年）：</strong><br>1893年，<span
+                                                class='greengreen'>紐西蘭成為世界上首個賦予女性選舉權的國家</span>，這一歷史性事件標誌著紐西蘭在民主進程中的重要一步。20世紀初，紐西蘭實行了多項社會改革，包括工人權利、社會福利和教育制度的改善。1938年，紐西蘭推出了世界上首個全面的社會保障制度。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">完全獨立與政治穩定（1947年至今）：</strong><br>1947年，紐西蘭通過《威斯敏斯特法規》（Statute
+                                            of Westminster Adoption Act），正式獲得立法獨立。隨後的幾十年，紐西蘭政治穩定，兩大主要政黨——工黨（Labour
+                                            Party）和國家黨（National Party）輪流執政。1993年，紐西蘭採用了<span
+                                                class='greengreen'>混合成員比例代表制（Mixed-Member Proportional Representation,
+                                                MMP）</span>，進一步加強了議會的多元性和代表性。</p>
+                                        <p class="mb-3"><strong class="fontsize">當代紐西蘭：</strong><br>當代紐西蘭以其穩定的<span
+                                                class='greengreen'>民主政治體制</span>和<span
+                                                class='greengreen'>高度的公民參與度</span>著稱。政府在推動經濟發展、環境保護和社會公平方面取得了顯著成就。紐西蘭在國際舞台上積極參與維和行動和全球合作，並且以其多元文化和包容性社會受到國際社會的讚譽。
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="sweden" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">瑞典</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">中世紀至絕對君主制（9世紀-18世紀）：</strong><br>瑞典的政治歷史可以追溯到9世紀的維京時代，那時各個部落由地方酋長統治。<br>13世紀，瑞典王國逐漸形成並實行<span
+                                                class='greengreen'>君主制</span>。
+                                            <br>1523年，古斯塔夫·瓦薩（Gustav Vasa）登基，建立了<span
+                                                class='greengreen'>中央集權的君主國</span>。這一時期，瑞典經歷了宗教改革，從天主教改為路德宗新教，並在17世紀成為歐洲的一個強大國家。
+                                            <br>1840年，毛利部落與英國簽署了《懷唐伊條約》（Treaty of
+                                            Waitangi），確立了英國對紐西蘭的主權，同時保證毛利人對其土地和資源的所有權。這一條約被視為紐西蘭的建國文件，為之後的政治發展奠定了基礎。
+                                            <br>1841年，紐西蘭正式成為英國的殖民地，開始建立殖民政府體系。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">自由時代與憲政轉變（1718-1772年）：</strong><br>1718年，查理十二世（Charles
+                                            XII）去世後，瑞典進入了所謂的自由時代（Age of
+                                            Liberty），國會（Riksdag）在政治上佔據主導地位，並引入了一些早期的憲政元素。這一時期，瑞典的政治體制逐漸<span
+                                                class='greengreen'>從絕對君主制轉向立憲君主制</span>，國會由四個議院組成，分別代表貴族、教士、市民和農民。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">絕對君主制回歸與新憲法（1772-1809年）：</strong><br>1772年，古斯塔夫三世（Gustav
+                                            III）通過政變恢復了絕對君主制，<span class='greengreen'>削弱了國會的權力</span>。
+                                            <br>1809年，古斯塔夫四世（Gustav IV）被推翻，瑞典通過了一部新憲法，重新確立了立憲君主制，並設立了強有力的國會和一個獨立的司法體系。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">19世紀至20世紀初的民主改革（1809-1921年）：</strong><br>19世紀，瑞典經歷了一系列重要的民主改革。1866年，瑞典國會進行重大改革，廢除四院制，改為兩院制，並引入了更為廣泛的選舉權。這一時期，<span
+                                                class='greengreen'>工人運動和婦女運動開始興起</span>，<span
+                                                class='greengreen'>要求更多的政治權利和社會平等</span>。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">普選權與現代民主（1921-1945年）：</strong><br>1921年，瑞典實現了<span
+                                                class='greengreen'>男女普選</span>，所有<span
+                                                class='greengreen'>成年公民都獲得了投票權</span>，這標誌著瑞典現代民主制度的確立。二戰期間，瑞典保持中立，但戰後，瑞典積極參與國際事務，並成為聯合國的重要成員。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">戰後福利國家建設（1945-1980年）：</strong><br>戰後，瑞典開始構建全面的福利國家，政府在教育、醫療、住房和社會保障等方面提供廣泛的公共服務。瑞典社會民主工人黨（Swedish
+                                            Social Democratic Party）在這一時期主導政治，推動了一系列社會改革，奠定了現代瑞典社會的基礎。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">當代瑞典（1980年至今）：</strong><br>自1980年代以來，瑞典進行了多次經濟和政治改革，以應對全球化和現代化挑戰。1995年，瑞典加入歐洲聯盟（EU），進一步加強了其在國際上的影響力。在21世紀，瑞典繼續推動<span
+                                                class='greengreen'>環保政策</span>、<span
+                                                class='greengreen'>性別平等</span>和<span
+                                                class='greengreen'>人權保障</span>，並在科技創新和可持續發展方面取得顯著成就。</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6 leftline">
+                        <h3 class="tcenter mb-5">共產國家</h3>
+                        <!-- Button trigger modal -->
+                        <div class="row text-center">
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#china"><img
+                                        src="assets/img/country/china.jpg"></a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#northkorea"><img
+                                        src="assets/img/country/northkorea.jpg"></a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#vietnam"><img
+                                        src="assets/img/country/vietnam.jpg"></a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#cuba"><img
+                                        src="assets/img/country/cuba.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="china" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">中國</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">早期發展（1921-1949）：</strong><br>中國共產黨成立於1921年，當時還是一個相對小眾的政治組織。在國民黨領導下的國共合作時期，共產黨積極參與了對抗外來勢力的抗日戰爭，也在國內開展了土地革命。1949年，共產黨在中國內戰中取得勝利，建立了中華人民共和國，成為中國的統治黨。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">毛澤東時代（1949-1976）：</strong><br>毛澤東是中國共產黨的創始人之一，並在1949年至他去世的1976年期間擔任中國的領導人。在毛澤東的領導下，中國實行了極度集中的政治體制，包括大規模的土地改革、工業化進程和政治鬥爭，如<span
+                                                class='greengreen'>大躍進</span>和<span
+                                                class='greengreen'>文化大革命</span>。這些政策和運動對中國的政治、經濟和社會造成了巨大的影響。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">改革開放（1978至今）：</strong><br>鄧小平提出了改革開放政策，開啟了中國經濟改革的新時代。這一時期中國經歷了經濟的快速增長和對外開放，但政治體制並未實現根本性的改革，中國仍然是一個<span
+                                                class='greengreen'>單一黨制國家</span>，中央政府對社會和個人自由的控制仍然相當嚴格。儘管如此，共產黨在這一時期保持了其對政治和經濟的統治地位。
+                                        </p>
+                                        <p class="mb-3"><strong class="fontsize">當代發展：</strong><br>在21世紀初，<span
+                                                class='greengreen'>中國共產黨</span>繼續保持其統治地位，並通過經濟改革和現代化建設來提高中國的國際地位和影響力。
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="northkorea" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">北韓</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">二戰結束與朝鮮半島分裂（1945-1948年）：</strong><br>二戰結束後，朝鮮半島從日本殖民統治下解放。1945年，<span
+                                                class='greengreen'>蘇聯紅軍進駐朝鮮半島北部</span>，美軍進駐南部，朝鮮半島被分為北緯38度線以北的蘇聯占領區和以南的美國占領區。這一分裂為日後的朝鮮半島南北分治埋下了伏筆。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">朝鮮民主主義人民共和國成立（1948-1950年）：</strong><br>1948年，在蘇聯的支持下，<span
+                                                class='greengreen'>北朝鮮成立了朝鮮民主主義人民共和國</span>，金日成（Kim
+                                            Il-sung）成為首任最高領導人。同年，南部成立了大韓民國，兩國的建立標誌著朝鮮半島正式分裂。北韓在蘇聯和中國的支持下，迅速建立起一個以<span
+                                                class='greengreen'>共產主義</span>為基礎的政權，推行土地改革和國有化政策。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">朝鮮戰爭（1950-1953年）：</strong><br>1950年，朝鮮戰爭爆發，北韓在蘇聯和中國的支持下進攻南韓，試圖統一朝鮮半島。戰爭持續了三年，最終於1953年簽署停戰協定，朝鮮半島回到戰前的分界線。<span
+                                                class='greengreen'>戰後，北韓進一步鞏固了共產主義體制，並開始重建戰後經濟。</span></p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">主體思想與金日成統治（1953-1994年）：</strong><br>戰後，金日成逐漸確立了個人崇拜和獨裁統治，並<span
+                                                class='greengreen'>提出了“主體思想”（Juche），強調自力更生和政治獨立。</span>1950年代和1960年代，北韓實行了大規模的工業化和集體農業，經濟取得了一定發展。然而，隨著時間的推移，北韓的經濟模式逐漸顯現出缺陷，特別是在蘇聯解體後，北韓失去了重要的經濟和技術支持，<span
+                                                class='greengreen'>經濟困難加劇</span>。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">金正日時期（1994-2011年）：</strong><br>1994年，金日成去世，其子金正日（Kim
+                                            Jong-il）繼位。金正日延續了父親的主體思想和個人崇拜體制，進一步加強了對國家的控制。<span
+                                                class='greengreen'>1990年代中期，北韓遭遇了嚴重的經濟危機和飢荒，導致大量人口死亡。</span>儘管如此，金正日仍然堅持發展核武器和軍事力量，導致國際社會對北韓進行制裁和孤立。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">金正恩時期（2011年至今）：</strong><br>2011年，金正日去世，其子金正恩（Kim
+                                            Jong-un）繼位，成為北韓的新一代最高領導人。金正恩繼續推動核武器和導彈發展，並進行了一系列核試驗和導彈試射，引發國際社會的強烈譴責和進一步制裁。同時，金正恩也進行了一些經濟改革和開放舉措，試圖改善國內經濟狀況。然而，北韓的經濟仍然受到國際制裁和內部結構性問題的困擾。
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="vietnam" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">越南</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">法國殖民統治與民族解放運動（19世紀末-1945年）：</strong><br>19世紀末，法國開始對越南實行殖民統治。殖民時期，越南人民飽受壓迫，民族主義情緒逐漸高漲。1920年代，胡志明（Ho
+                                            Chi Minh）在法國成立了越南青年革命同志會，並在<span
+                                                class='greengreen'>1930年建立了印度支那共產黨（後來改名為越南共產黨），旨在推動民族解放和社會主義革命。</span>
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">越南民主共和國成立與第一次印度支那戰爭（1945-1954年）：</strong><br>1945年，日本在二戰中戰敗撤出越南。胡志明領導的越盟（越南獨立同盟會）隨即發動八月革命，推翻了法國的殖民統治，並於<span
+                                                class='greengreen'>1945年9月2日宣布成立越南民主共和國（北越）</span>，胡志明出任國家主席。然而，法國試圖恢復殖民統治，隨後爆發了第一次印度支那戰爭。1954年，法國在奠邊府戰役中戰敗，雙方簽署《日內瓦協定》，越南被暫時分為北越和南越兩個政權。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">越南戰爭（1955-1975年）：</strong><br>越南戰爭是冷戰期間最具代表性的代理人戰爭之一。北越得到蘇聯和中國的支持，南越則得到美國的大力支持。1964年，美國以北部灣事件為由，開始大規模介入越南戰爭，派遣大量軍隊和物資支援南越。然而，<span
+                                                class='greengreen'>北越和越共進行了頑強的抵抗，並於1975年攻佔西貢，實現國家統一。</span></p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">越南社會主義共和國成立與重建（1976-1986年）：</strong><br>1976年，越南統一後<span
+                                                class='greengreen'>成立了越南社會主義共和國</span>，首都設在河內，<span
+                                                class='greengreen'>越南共產黨成為唯一執政黨</span>。統一後，政府推行了大規模的社會主義改造和重建工作，進行土地集體化和國有化。然而，由於經濟困難和戰後重建的挑戰，越南經濟發展受到嚴重制約。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">經濟改革與革新開放（1986年至今）：</strong><br>1986年，越南共產黨在第六次全國代表大會上決定實行革新開放政策（Doi
+                                            Moi），開始進行市場經濟改革，放寬對私人經濟的限制，吸引外資進入，促進經濟增長。這一政策大大改善了越南的經濟狀況，使得越南經濟在隨後數十年中快速發展。
+                                        </p>
+                                        <p class="mb-3"><strong class="fontsize">當代越南：</strong><br>當前，<span
+                                                class='greengreen'>越南依然由共產黨領導，實行一黨制</span>。政府在經濟上繼續推行市場改革和開放政策，同時在政治上保持嚴格控制。越南在國際舞台上日益活躍，成為東南亞地區的重要國家之一。在經濟方面，越南致力於工業化和現代化，並在科技、教育、醫療等領域取得了顯著進步。然而，越南也面臨著一些挑戰，如貪腐問題、環境保護和社會公平等。
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="cuba" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">古巴</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="mb-3"><strong
+                                                class="fontsize">巴蒂斯塔獨裁統治與革命運動（1933-1959年）：</strong><br>古巴的共產主義歷史可以追溯到20世紀中葉。1933年，富爾亨西奧·巴蒂斯塔（Fulgencio
+                                            Batista）通過軍事政變上台，實行<span
+                                                class='greengreen'>獨裁統治</span>，並在1952年再次通過政變掌權。巴蒂斯塔政權以腐敗和壓迫著稱，激起了廣泛的反抗和不滿。1953年，菲德爾·卡斯特羅（Fidel
+                                            Castro）領導了一次對蒙卡達兵營的襲擊，儘管失敗，但這標誌著古巴革命運動的開始。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">古巴革命（1953-1959年）：</strong><br>1956年，菲德爾·卡斯特羅與切·格瓦拉（Che
+                                            Guevara）等人在墨西哥組織起義軍，並返回古巴發動游擊戰。經過兩年的武裝鬥爭，卡斯特羅的革命軍於1959年1月1日推翻了巴蒂斯塔政權，建立了新政府。卡斯特羅成為古巴的最高領導人，開始實行一系列社會和經濟改革。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">社會主義轉型與美國對抗（1960-1970年）：</strong><br>革命成功後，卡斯特羅政府迅速進行了土地改革和國有化，沒收了大量美國和本地資產，導致與美國的關係惡化。<span
+                                                class='greengreen'>1961年，卡斯特羅宣布古巴為社會主義國家</span>。同年，美國支持的豬灣入侵失敗，加劇了雙方的對立。1962年，古巴導彈危機爆發，美蘇兩國在古巴問題上進行了激烈對峙，最終達成妥協，蘇聯撤回導彈，美國承諾不再入侵古巴。
+                                        </p>
+                                        <p class="mb-3"><strong class="fontsize">鞏固社會主義體制（1970-1990年）：</strong><br><span
+                                                class='greengreen'>1970年代，古巴在蘇聯的支持下鞏固了社會主義體制</span>，實行計劃經濟，並加強了國內的政治控制。古巴積極<span
+                                                class='greengreen'>參與國際共產主義運動</span>，支持非洲和拉丁美洲的左翼運動。儘管經濟上依賴蘇聯援助，但古巴在醫療、教育和社會保障方面取得了顯著成就。
+                                        </p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">蘇聯解體與經濟困境（1991-2000年）：</strong><br>1991年，蘇聯解體，古巴失去了主要的經濟和政治支持，進入了嚴重的經濟危機時期，被稱為“特別時期”（Período
+                                            Especial）。在這一困難時期，古巴政府進行了一些有限的經濟改革，如允許小規模私營企業和吸引外資，以應對物資短缺和經濟困境。</p>
+                                        <p class="mb-3"><strong
+                                                class="fontsize">後卡斯特羅時代與改革（2008年至今）：</strong><br>2008年，菲德爾·卡斯特羅因健康問題退位，其弟勞爾·卡斯特羅（Raúl
+                                            Castro）接任。勞爾·卡斯特羅推動了一系列經濟改革，包括擴大私營經濟、允許外國投資和農業改革，試圖改善經濟狀況。2018年，勞爾·卡斯特羅卸任，米格爾·迪亞斯-卡內爾（Miguel
+                                            Díaz-Canel）成為國家主席，繼續推動改革。</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!--新聞-->
+        <section class="page-section bg-light" id="news">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">新聞</h2>
+                    <h3 class="section-subheading text-muted">News about democracy and communism.</h3>
+                </div>
+            </div>
+        </section>
+        <!--深度報導-->
+        <section class="page-section bg-light" id="innews">
+            <div class="container">
+                <div class="text-left">
+                    <h3 class="section-heading text-uppercase">深度報導</h3>
+                    <div class="row mb-5">
+                        <hr size="5" align="center" noshade width="90%" color="0000ff">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-4 mb-3">
+                            <div class="card h-100">
+                                <a href="https://leverageedu.com/blog/difference-between-democracy-and-dictatorship/"
+                                    target="_blank">
+                                    <img src="assets/img/news/Democracy-Vs-Dictatorship.jpg" class="card-img-top"
+                                        alt="民主和獨裁有什麼不同？">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">民主和共產有什麼差別</h5>
+                                    <p class="card-text">
+                                        民主制度為<strong>權力源於人民</strong>,有定期選舉和多元政治參與,公民享有言論自由等權利,權力受法律制衡。<br>
+                                        獨裁製度為<strong>權力集中在少數人手中</strong>,缺乏民主選舉,反對聲音受限,公民自由權利受嚴格限制,政府權力缺乏有效制衡。<br>
+                                        兩者在權力來源、公民參與、自由程度等方面存在本質差異。
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源1</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 mb-3">
+                            <div class="card h-100">
+                                <a href="https://www.javatpoint.com/advantages-and-disadvantages-of-democracy"
+                                    target="_blank">
+                                    <img src="assets/img/news/images.png" class="card-img-top" alt="民主的優點和缺點">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">民主的優點與缺點</h5>
+                                    <p class="card-text">
+                                        民主制度的優點在於賦予人民選舉和監督權力,保障公民基本權利自由,促進社會公平正義,有利國家長期穩定發展。
+                                        但其決策效率較低,易受操縱和腐敗,教育程度較低者容易被蠱惑,少數群體有被忽視的風險,政治不穩定可能導致社會動蕩。
+                                        整體而言,民主制度雖非完美,但仍是公認的最佳政治形式之一,<strong>關鍵在於權力制衡和民主參與的平衡。</strong>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源2</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 mb-3">
+                            <div class="card h-100">
+                                <a href="https://advantageslist.com/advantages-and-disadvantages-of-dictatorship/"
+                                    target="_blank">
+                                    <img src="assets/img/news/Advantages-and-Disadvantages-of-Dictatorship.jpg"
+                                        class="card-img-top" alt="獨裁的優點與缺點">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">共產的優點與缺點</h5>
+                                    <p class="card-text">
+                                        獨裁製度的優勢在於決策效率高、社會秩序穩定、有利於經濟發展；
+                                        然而，缺點包括限制公民自由、權力集中易導致腐敗、公共政策缺乏多元觀點等，可能阻礙社會進步和人權發展。
+                                        總的來說，儘管獨裁製度在某些方面具備優勢，但其<strong>制度設計缺乏權力制衡和民眾參與</strong>，容易產生不穩定因素並限制社會的多元發展。
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源3</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 mb-3">
+                            <div class="card h-100">
+                                <a href="https://www.bbc.com/ukchina/trad/vert_fut/2015/06/150609_vert_fut_dictatorships_realistic"
+                                    target="_blank">
+                                    <img src="assets/img/news/150609110123_fvertic1.png" class="card-img-top"
+                                        alt="獨裁者會消失嗎？">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">獨裁者會消失嗎？</h5>
+                                    <p class="card-text">
+                                        生活在民主政體下的公民常常會把獨裁政體與壓迫、侵犯人權、貧窮和動蕩聯繫起來，獨裁政體確實掠去了無數生命。
+                                        獨裁者並不是生來就是邪惡，但是許多獨裁者確實擁有一些共同的人格特質。
+                                        他們可能<strong>幻想擁有無限權力、美麗、榮耀、榮譽和支配地位，但是他們缺乏同情心。</strong>
+                                        雖然獨裁政權充滿負面影響,但也會繼續存在。
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源4</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 mb-3">
+                            <div class="card h-100">
+                                <a href="https://socialistproject.ca/2024/05/enabling-dictatorship-and-destroying-democracy/"
+                                    target="_blank">
+                                    <img src="assets/img/news/mst-milei.png" class="card-img-top" alt="助長獨裁並摧毀民主">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">助長獨裁並摧毀民主</h5>
+                                    <p class="card-text">
+                                        獨裁者會透過<strong>操縱法律、壓制反對聲音、利用科技監控等手段來維護自己的統治地位。</strong>
+                                        同時,他們也會利用經濟手段,如掠奪公共資源,以換取民眾的順從。
+                                        這些策略已成為當代獨裁統治的常見手段,對民主事業構成嚴重威脅。
+                                        因此,關注並制止這些趨勢至關重要,以保護民主制度和公民自由。
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源5</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 mb-3">
+                            <div class="card h-100">
+                                <a href="https://www.carnegie.org/our-work/article/how-do-dictatorships-survive-21st-century/"
+                                    target="_blank">
+                                    <img src="assets/img/news/0_Si320vLFK8C7Rt7S.png" class="card-img-top"
+                                        alt="21世紀獨裁政權如何生存？">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">21世紀獨裁政權如何生存？</h5>
+                                    <p class="card-text">
+                                        獨裁國家數量開始增加，
+                                        原因是全球政治出現複雜挑戰,新興獨裁政權利用現代技術和資訊操控來支配民眾,取代了過去激進的獨裁方式。
+                                        這些被稱為<strong>「旋轉獨裁者」的新型獨裁者,憑藉偽裝成民主化的形象,成功維持其統治地位。</strong>
+                                        總而言之,儘管民主化浪潮興起,但獨裁製度仍能在21世紀持續存在和發展,並採取更隱秘和巧妙的手段捍衛其統治。
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源6</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--人物專訪-->
+        <section class="page-section bg-light" id="peoplenews">
+            <div class="container">
+                <div class="text-left">
+                    <h3 class="section-heading text-uppercase">人物專訪</h3>
+                    <div class="row mb-5">
+                        <hr size="5" align="center" noshade width="90%" color="0000ff">
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-6">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="https://www.cw.com.tw/article/5034831" target="_blank">
+                                    <img src="assets/img/news/FU.jpg" class="card-img-top" alt="專訪作家-法蘭西斯・福山">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">專訪作家-法蘭西斯・福山</h5>
+                                    <p class="card-text">
+                                        在互信中淬煉民主，「歷史之終結」出版
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源7</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="https://www.voacantonese.com/a/dobson-china-democratization-20120829/1497807.html"
+                                    target="_blank">
+                                    <img src="assets/img/news/Dowbosen.jpg" class="card-img-top" alt="專訪作家-威廉・道布森">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">專訪作家-威廉・道布森</h5>
+                                    <p class="card-text">
+                                        專制適應新的時代，「獨裁者的學習曲線」出版
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源8</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="https://www.twreporter.org/a/interview-v-dem-staffan-lindberg" target="_blank">
+                                    <img src="assets/img/news/V-Dem.jpg" class="card-img-top" alt="專訪V-Dem創辦人-林德伯格">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">專訪V-Dem創辦人-林德伯格</h5>
+                                    <p class="card-text">
+                                        對抗假訊息，就是維繫民主的關鍵所在
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">參考資料來源9</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row mb-3">
-                    <div class="col-4 mb-3">
-                        <div class="card h-100">
-                            <a href="https://leverageedu.com/blog/difference-between-democracy-and-dictatorship/"
-                                target="_blank">
-                                <img src="assets/img/news/Democracy-Vs-Dictatorship.jpg" class="card-img-top"
-                                    alt="民主和獨裁有什麼不同？">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">民主和共產有什麼差別</h5>
-                                <p class="card-text">
-                                    民主制度為<strong>權力源於人民</strong>,有定期選舉和多元政治參與,公民享有言論自由等權利,權力受法律制衡。<br>
-                                    獨裁製度為<strong>權力集中在少數人手中</strong>,缺乏民主選舉,反對聲音受限,公民自由權利受嚴格限制,政府權力缺乏有效制衡。<br>
-                                    兩者在權力來源、公民參與、自由程度等方面存在本質差異。
-                                </p>
+                    <!--影音報導-->
+                    <section class="page-section bg-light" id="videonews">
+                        <div class="container">
+                            <div class="text-left">
+                                <h3 class="section-heading text-uppercase">影音報導</h3>
+                                <div class="row mb-5">
+                                    <hr size="5" align="center" noshade width="90%" color="0000ff">
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源1</small>
+                            <hr class="featurette-divider">
+
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">民主與獨裁(1)-<span class="text-muted">難民危機</span></h2>
+                                    <p class="lead">探討統治者與被統治者之間的互動、權力概念以及它們如何影響人們的日常生活。</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="https://www.youtube.com/watch?v=GSvq8Yd3wbE" target="_blank">
+                                        <img src="assets/img/news/video1.png" class="card-img-top" alt="民主與獨裁(1)-難民危機">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="featurette-divider">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">民主與獨裁(2)- <span
+                                            class="text-muted">為什麼民主仍然是最好的政府形式？</span></h2>
+                                    <p class="lead">亞歷克斯·譚教授論證了民主仍然是最好的政府形式，並分享了哪種民主最有效的秘密。</p>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <a href="https://www.youtube.com/watch?v=LR2SIWRMrtA&t=2s" target="_blank">
+                                        <img src="assets/img/news/video2.png" class="card-img-top"
+                                            alt="民主與獨裁(2)-為什麼民主仍然是最好的政府形式？">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="featurette-divider">
+
+                            <div class="row featurette">
+                                <div class="col-md-7">
+                                    <h2 class="featurette-heading">民主與獨裁(3)-<span class="text-muted">緬甸獨裁與民主的轉變之路</span>
+                                    </h2>
+                                    <p class="lead">緬甸走過50年軍事獨裁與民主主義的坎坷之路。</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="https://www.youtube.com/watch?v=KO_ytSjgepc&t=1457s" target="_blank">
+                                        <img src="assets/img/news/video3.png" class="card-img-top"
+                                            alt="民主與獨裁(3)-緬甸獨裁與民主的轉變之路">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="featurette-divider">
+
+                            <div class="row featurette">
+                                <div class="col-md-7 order-md-2">
+                                    <h2 class="featurette-heading">民主與獨裁(4)-<span class="text-muted">香港民主自治轉為獨裁管理</span>
+                                    </h2>
+                                    <p class="lead">香港從原本的一國兩制轉為如今的一國一制 </p>
+                                </div>
+                                <div class="col-md-5 order-md-1">
+                                    <a href="https://www.youtube.com/watch?v=STWvbsJzLnc&t=972s" target="_blank">
+                                        <img src="assets/img/news/video4.png" class="card-img-top"
+                                            alt="民主與獨裁(4)-香港民主自治轉為獨裁管理">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                </div>
+                <hr class="featurette-divider">
+        </section>
 
-
-                    <div class="col-4 mb-3">
-                        <div class="card h-100">
-                            <a href="https://www.javatpoint.com/advantages-and-disadvantages-of-democracy"
-                                target="_blank">
-                                <img src="assets/img/news/images.png" class="card-img-top" alt="民主的優點和缺點">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">民主的優點與缺點</h5>
-                                <p class="card-text">
-                                    民主制度的優點在於賦予人民選舉和監督權力,保障公民基本權利自由,促進社會公平正義,有利國家長期穩定發展。
-                                    但其決策效率較低,易受操縱和腐敗,教育程度較低者容易被蠱惑,少數群體有被忽視的風險,政治不穩定可能導致社會動蕩。
-                                    整體而言,民主制度雖非完美,但仍是公認的最佳政治形式之一,<strong>關鍵在於權力制衡和民主參與的平衡。</strong>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源2</small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-4 mb-3">
-                        <div class="card h-100">
-                            <a href="https://advantageslist.com/advantages-and-disadvantages-of-dictatorship/"
-                                target="_blank">
-                                <img src="assets/img/news/Advantages-and-Disadvantages-of-Dictatorship.jpg"
-                                    class="card-img-top" alt="獨裁的優點與缺點">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">共產的優點與缺點</h5>
-                                <p class="card-text">
-                                    獨裁製度的優勢在於決策效率高、社會秩序穩定、有利於經濟發展；
-                                    然而，缺點包括限制公民自由、權力集中易導致腐敗、公共政策缺乏多元觀點等，可能阻礙社會進步和人權發展。
-                                    總的來說，儘管獨裁製度在某些方面具備優勢，但其<strong>制度設計缺乏權力制衡和民眾參與</strong>，容易產生不穩定因素並限制社會的多元發展。
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源3</small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-4 mb-3">
-                        <div class="card h-100">
-                            <a href="https://www.bbc.com/ukchina/trad/vert_fut/2015/06/150609_vert_fut_dictatorships_realistic"
-                                target="_blank">
-                                <img src="assets/img/news/150609110123_fvertic1.png" class="card-img-top"
-                                    alt="獨裁者會消失嗎？">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">獨裁者會消失嗎？</h5>
-                                <p class="card-text">
-                                    生活在民主政體下的公民常常會把獨裁政體與壓迫、侵犯人權、貧窮和動蕩聯繫起來，獨裁政體確實掠去了無數生命。
-                                    獨裁者並不是生來就是邪惡，但是許多獨裁者確實擁有一些共同的人格特質。
-                                    他們可能<strong>幻想擁有無限權力、美麗、榮耀、榮譽和支配地位，但是他們缺乏同情心。</strong>
-                                    雖然獨裁政權充滿負面影響,但也會繼續存在。
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源4</small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-4 mb-3">
-                        <div class="card h-100">
-                            <a href="https://socialistproject.ca/2024/05/enabling-dictatorship-and-destroying-democracy/"
-                                target="_blank">
-                                <img src="assets/img/news/mst-milei.png" class="card-img-top" alt="助長獨裁並摧毀民主">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">助長獨裁並摧毀民主</h5>
-                                <p class="card-text">
-                                    獨裁者會透過<strong>操縱法律、壓制反對聲音、利用科技監控等手段來維護自己的統治地位。</strong>
-                                    同時,他們也會利用經濟手段,如掠奪公共資源,以換取民眾的順從。
-                                    這些策略已成為當代獨裁統治的常見手段,對民主事業構成嚴重威脅。
-                                    因此,關注並制止這些趨勢至關重要,以保護民主制度和公民自由。
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源5</small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-4 mb-3">
-                        <div class="card h-100">
-                            <a href="https://www.carnegie.org/our-work/article/how-do-dictatorships-survive-21st-century/"
-                                target="_blank">
-                                <img src="assets/img/news/0_Si320vLFK8C7Rt7S.png" class="card-img-top"
-                                    alt="21世紀獨裁政權如何生存？">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">21世紀獨裁政權如何生存？</h5>
-                                <p class="card-text">
-                                    獨裁國家數量開始增加，
-                                    原因是全球政治出現複雜挑戰,新興獨裁政權利用現代技術和資訊操控來支配民眾,取代了過去激進的獨裁方式。
-                                    這些被稱為<strong>「旋轉獨裁者」的新型獨裁者,憑藉偽裝成民主化的形象,成功維持其統治地位。</strong>
-                                    總而言之,儘管民主化浪潮興起,但獨裁製度仍能在21世紀持續存在和發展,並採取更隱秘和巧妙的手段捍衛其統治。
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源6</small>
-                            </div>
-                        </div>
-                    </div>
+        <!-- 工作人員-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">分工表</h2>
+                    <h3 class="section-subheading text-muted">Group division of labor and team member information.</h3>
                 </div>
 
-            </div>
-        </div>
-    </section>
-    <!--人物專訪-->
-    <section class="page-section bg-light" id="peoplenews">
-        <div class="container">
-            <div class="text-left">
-                <h3 class="section-heading text-uppercase">人物專訪</h3>
-                <div class="row mb-5">
-                    <hr size="5" align="center" noshade width="90%" color="0000ff">
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mb-6">
-                <div class="row mb-3">
-                    <div class="col">
-                        <div class="card h-100">
-                            <a href="https://www.cw.com.tw/article/5034831" target="_blank">
-                                <img src="assets/img/news/FU.jpg" class="card-img-top" alt="專訪作家-法蘭西斯・福山">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">專訪作家-法蘭西斯・福山</h5>
-                                <p class="card-text">
-                                    在互信中淬煉民主，「歷史之終結」出版
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源7</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <div class="card h-100">
-                            <a href="https://www.voacantonese.com/a/dobson-china-democratization-20120829/1497807.html"
-                                target="_blank">
-                                <img src="assets/img/news/Dowbosen.jpg" class="card-img-top" alt="專訪作家-威廉・道布森">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">專訪作家-威廉・道布森</h5>
-                                <p class="card-text">
-                                    專制適應新的時代，「獨裁者的學習曲線」出版
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源8</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <div class="card h-100">
-                            <a href="https://www.twreporter.org/a/interview-v-dem-staffan-lindberg" target="_blank">
-                                <img src="assets/img/news/V-Dem.jpg" class="card-img-top" alt="專訪V-Dem創辦人-林德伯格">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">專訪V-Dem創辦人-林德伯格</h5>
-                                <p class="card-text">
-                                    對抗假訊息，就是維繫民主的關鍵所在
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">參考資料來源9</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <!--影音報導-->
-                <section class="page-section bg-light" id="videonews">
+                <div id="space" class="our-portfolio section">
                     <div class="container">
-                        <div class="text-left">
-                            <h3 class="section-heading text-uppercase">影音報導</h3>
-                            <div class="row mb-5">
-                                <hr size="5" align="center" noshade width="90%" color="0000ff">
-                            </div>
-                        </div>
-                        <hr class="featurette-divider">
-
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">民主與獨裁(1)-<span class="text-muted">難民危機</span></h2>
-                                <p class="lead">探討統治者與被統治者之間的互動、權力概念以及它們如何影響人們的日常生活。</p>
-                            </div>
-                            <div class="col-md-5">
-                                <a href="https://www.youtube.com/watch?v=GSvq8Yd3wbE" target="_blank">
-                                    <img src="assets/img/news/video1.png" class="card-img-top" alt="民主與獨裁(1)-難民危機">
-                                </a>
-                            </div>
-                        </div>
-
-                        <hr class="featurette-divider">
-
-                        <div class="row featurette">
-                            <div class="col-md-7 order-md-2">
-                                <h2 class="featurette-heading">民主與獨裁(2)- <span
-                                        class="text-muted">為什麼民主仍然是最好的政府形式？</span></h2>
-                                <p class="lead">亞歷克斯·譚教授論證了民主仍然是最好的政府形式，並分享了哪種民主最有效的秘密。</p>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                                <a href="https://www.youtube.com/watch?v=LR2SIWRMrtA&t=2s" target="_blank">
-                                    <img src="assets/img/news/video2.png" class="card-img-top"
-                                        alt="民主與獨裁(2)-為什麼民主仍然是最好的政府形式？">
-                                </a>
-                            </div>
-                        </div>
-
-                        <hr class="featurette-divider">
-
-                        <div class="row featurette">
-                            <div class="col-md-7">
-                                <h2 class="featurette-heading">民主與獨裁(3)-<span class="text-muted">緬甸獨裁與民主的轉變之路</span>
-                                </h2>
-                                <p class="lead">緬甸走過50年軍事獨裁與民主主義的坎坷之路。</p>
-                            </div>
-                            <div class="col-md-5">
-                                <a href="https://www.youtube.com/watch?v=KO_ytSjgepc&t=1457s" target="_blank">
-                                    <img src="assets/img/news/video3.png" class="card-img-top"
-                                        alt="民主與獨裁(3)-緬甸獨裁與民主的轉變之路">
-                                </a>
-                            </div>
-                        </div>
-
-                        <hr class="featurette-divider">
-
-                        <div class="row featurette">
-                            <div class="col-md-7 order-md-2">
-                                <h2 class="featurette-heading">民主與獨裁(4)-<span class="text-muted">香港民主自治轉為獨裁管理</span>
-                                </h2>
-                                <p class="lead">香港從原本的一國兩制轉為如今的一國一制 </p>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                                <a href="https://www.youtube.com/watch?v=STWvbsJzLnc&t=972s" target="_blank">
-                                    <img src="assets/img/news/video4.png" class="card-img-top"
-                                        alt="民主與獨裁(4)-香港民主自治轉為獨裁管理">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <hr class="featurette-divider">
-    </section>
-
-    <!-- 工作人員-->
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">分工表</h2>
-                <h3 class="section-subheading text-muted">Group division of labor and team member information.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                        <h4>楊奎泰</h4>
-                        <p class="text-muted">TEDDY</p>
-                        <div class="row text-center">
-                            <div class="col-3"></div>
-                            <button type="button" class="btn btn-primary mb-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            
-                                心得按這邊
-                            </button>
-                            <div class="col-3"></div>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">奎泰的心得</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="row">
+                            <div class="col">
+                                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                                    <div class="hidden-content">
+                                        <h4>心得</h4>
+                                        <p class="text-left">這次的網頁設計課程讓我學習到許多東西，HTML5、CSS3、RWD、Bootstrap 、GitHub，雖然這堂課對於我來說很難，但是不得不說這門課每次做完都蠻有成就感的，就算我做的不是很好也有很多課都因為公假沒有上到，課程我最有印象的是css加上去可以改變背景顏色和字體顏色讓網站長得更好看更順眼。</p>
                                     </div>
-                                    <div class="modal-body">
-                                      ...
+                                    <div class="showed-content">
+                                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                                        <br><br>
+                                        <h4>楊奎泰</h4>
+                            <p class="text-muted">TEDDY</p>
+                            <p class="text-muted">分工：歷史線製作</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://kuicc.github.io/" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/k.11.cc/"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:a112070003@mail.shu.edu.tw"><i
+                                class="fa-regular fa-envelope"></i></a>
                                     </div>
-                                  </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="hidden-content">
+                                        <h4>心得</h4>
+                                        <p class="text-left">通過這堂課程我學會了如何從零開始架設一個網頁，雖然很過程很困難，但看到自己做出來的網頁瞬間成就感滿滿!在這段時間我發現我掉了好多頭髮......由此可證這是一門很燒腦的課程。那為什麼想選這個主題呢?是因為我們的主題是國際關係與全球議題，然後我們認為可以選擇現在世界兩大國的國家政治體系來做為報告。</p>
+                                    </div>
+                                    <div class="showed-content">
+                                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                                        <br><br>
+                                        <h4>楊熙蕾</h4>
+                            <p class="text-muted">Michelle</p>
+                            <p class="text-muted">區別、國家製作，資料查詢</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://michellehsi.github.io/"
+                                target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/hsi_ly0925/"
+                                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="mailto:a112070009@mail.shu.edu.tw"><i
+                                    class="fa-regular fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="hidden-content">
+                                        <h4>心得</h4>
+                                        <p class="text-left">網頁設計課程讓我收益良多，學會製作一個自己的網頁也有成就感。<br>
+                                            從零到有的網頁，利用ＨＴＭＬ與ＣＳＳ製作出來，
+                                            雖然過程中遇到許多挫折與問題，但都能獲得解決。
+                                            像是ＣＳＳ顏色條整、ＨＴＭＬ程式碼填寫或擺放位置等。<br>
+                                            通過這次期末網頁製作，從分工、選主題再到製作網頁、設計版面、挑選配色等，
+                                            讓我們知道製作網頁的不容易。</p>
+                                    </div>
+                                    <div class="showed-content">
+                                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                                        <br><br>
+                                        <h4>施沛綺</h4>
+                            <p class="text-muted">Jessica</p>
+                            <p class="text-muted">新聞、分工表，新聞查詢</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://jessica6817.github.io/"
+                                target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/jessica_1123_vj/"
+                                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="mailto:a112070015@mail.shu.edu.tw"><i
+                                    class="fa-regular fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="hidden-content">
+                                        <h4>心得</h4>
+                                        <p class="text-left">我覺得網頁設計其實有趣但蠻有難度，網站的設計要簡單明瞭，這樣大家才能一目瞭然，顏色和字體的選擇也很重要，這些都會影響瀏覽者的觀感和體驗。總體來說，網頁設計需要兼顧美觀和實用。最後的課程，學習如何與組員共同創作一份專題報導，運用這學期所學的技能，再經過美化，清楚地表達其中的內容，讓瀏覽者能夠舒服的閱讀，雖然我們在產出的過程中有遇到很多挫折，但幸好最後成品有順利產出，看到我們做出一個網頁並且內容也是我們想跟大家討論的，說真的很感動。</p>
+                                    </div>
+                                    <div class="showed-content">
+                                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                                        <br><br>
+                                        <h4>詹旻恩</h4>
+                            <p class="text-muted">Emily</p>
+                            <p class="text-muted">介紹、優缺點，資料查詢</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://emily650359.github.io/"
+                            target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_moomoo.1106_/"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:a112070073@mail.shu.edu.tw"><i
+                                class="fa-regular fa-envelope"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-dark btn-social mx-2" href="https://kuicc.github.io/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/k.11.cc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="mailto:a112070003@mail.shu.edu.tw"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>楊熙蕾</h4>
-                        <p class="text-muted">Michelle</p>
-                        <div class="row text-center">
-                            <div class="col-3"></div>
-                            <button type="button" class="btn btn-primary mb-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                心得按這邊
-                            </button>
-                            <div class="col-3"></div>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">熙蕾的心得</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      ...
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-dark btn-social mx-2" href="https://michellehsi.github.io/" target="_blank"><i class="fa-brands fa-github"></i></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/hsi_ly0925/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="mailto:a112070009@mail.shu.edu.tw"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>施沛綺</h4>
-                        <p class="text-muted">Jessica</p>
-                        <div class="row text-center">
-                            <div class="col-3"></div>
-                            <button type="button" class="btn btn-primary mb-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                心得按這邊
-                            </button>
-                            <div class="col-3"></div>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">沛綺的心得</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      ...
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-dark btn-social mx-2" href="https://jessica6817.github.io/" target="_blank"><i class="fa-brands fa-github"></i></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/jessica_1123_vj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="mailto:a112070015@mail.shu.edu.tw"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>詹旻恩</h4>
-                        <p class="text-muted">Emily</p>
-                        <div class="row text-center">
-                            <div class="col-3"></div>
-                            <button type="button" class="btn btn-primary mb-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                心得按這邊
-                            </button>
-                            <div class="col-3"></div>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">旻恩的心得</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      ...
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-dark btn-social mx-2" href="https://emily650359.github.io/" target="_blank"><i class="fa-brands fa-github"></i></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_moomoo.1106_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="mailto:a112070073@mail.shu.edu.tw"><i class="fa-regular fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-            </div>
-        </div>
-    </section>
-    <!-- Clients-->
-    <div class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg"
-                            alt="..." aria-label="Microsoft Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg"
-                            alt="..." aria-label="Google Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg"
-                            alt="..." aria-label="Facebook Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg"
-                            alt="..." aria-label="IBM Logo" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                                data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
+        </section>
+        
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Your Message *"
-                                data-sb-validations="required"></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        To activate this form, sign up at
-                        <br />
-                        <a
-                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
-                <!-- Submit Button-->
-                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
-                        id="submitButton" type="submit">Send Message</button></div>
-            </form>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio item 1 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Threads
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Illustration
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Portfolio item 2 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Explore
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Graphic Design
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio item 3 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Finish
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Identity
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio item 4 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Lines
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Branding
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio item 5 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Southwest
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Website Design
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio item 6 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Window
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Photography
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </footer>
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
