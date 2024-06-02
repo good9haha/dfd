@@ -1,5 +1,6 @@
 /* 民主與共產 */
 .p15 {
+    color: #000000;
     padding:20px ;
     background: rgba(93 ,141, 50, 0.289);
     border-radius:15px;
@@ -13,7 +14,7 @@
     min-height:12em;
     padding:1.5rem;
     border-radius: 15px;;
-    color:#eee;
+    color:#ffffff;
 }
 
 .demo {
@@ -122,6 +123,11 @@ text-align: center;
     background: #404040;
 }
 
+/*時間軸圖底色*/
+.timeline > li .timeline-image {
+    background-color: #8db14e;
+}
+
 
 /*時間軸*/
 .timeline > li {
@@ -185,7 +191,6 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 120px;
   margin-top: 0px;
 }
 
