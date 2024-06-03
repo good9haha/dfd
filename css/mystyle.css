@@ -221,7 +221,9 @@ section.col-md-6.leftline.flag {
 */
 
 section#news.page-section.bg-light {
-    padding:0 0 10px 0!important;
+    padding:0 0 30px 0 !important;
+    margin-bottom: -150px;
+    
 }
 
 /*
