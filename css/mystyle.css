@@ -202,7 +202,7 @@ section#news.page-section.bg-light {
 .card.h-100 {
     overflow:hidden;
 }
-.card.h-100 a {
+#innews .card.h-100 a {
     displaY:block;
     height:250px;
 }
