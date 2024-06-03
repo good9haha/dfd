@@ -16,23 +16,15 @@
     border-radius: 15px;;
     color:#ffffff;
 }
-
 .demo {
   /*background:#4169E1;*/
   background:rgba(0,0,255,0.6)
 }
-
 .comm {
  background:#F08080;
 }
 
-.carousel-control-prev, .carousel-control-next {
 
-}
-
-.carousel-control-prev:hover, .carousel-control-next:hover {
-
-}
 /*字體*/
 .fonthh{
     font-family: 'Noto Serif TC', sans-serif;
@@ -117,10 +109,9 @@ text-align: center;
 }
 .btn-secondary {
     background: #8db14e;.
-    border-color: #8db14e;
 }
 .btn-secondary:hover {
-    background: #404040;
+    background: #5a7629 !important;
 }
 
 /*時間軸圖底色*/
@@ -130,13 +121,7 @@ text-align: center;
 
 
 /*時間軸*/
-.timeline > li {
-  
-}
 
-ul {
-
-}
 
 @media (min-width: 768px) {
     .timeline:before {
@@ -217,16 +202,6 @@ section.col-md-6.leftline.flag {
 }
 
 /*
-新聞
-*/
-
-section#news.page-section.bg-light {
-    padding:0 0 30px 0 !important;
-    margin-bottom: -150px;
-    
-}
-
-/*
 資料來源
 **/
 
@@ -241,11 +216,11 @@ span.reference {
 }
 table.reference a{
    color:#94b05b;
-   diplay:inline-block;
+   display:inline-block;
 }
-.modal.fade.reference .modal-dialog {
+/*.modal.fade.reference .modal-dialog {
     
-}
+}*/
 .reference tbody tr th,
 .reference tbody tr td {
     vertical-align: middle;
