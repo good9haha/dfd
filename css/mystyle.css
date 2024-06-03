@@ -177,6 +177,13 @@ ul {
         }
     }
 
+/*
+section swiper
+*/
+section.swiper {
+    padding:-400px 0 -500px 0!important;
+}
+
 
 /*
 
