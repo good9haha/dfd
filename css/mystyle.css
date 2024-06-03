@@ -204,7 +204,8 @@ section#news.page-section.bg-light {
 }
 .card.h-100 a {
     displaY:block;
-    height:204px;
+    height:210px;
+    
 }
 .card.h-100 a img {
     transform:scale(1,1);transition: all 1s ease-out;
