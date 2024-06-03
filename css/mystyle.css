@@ -186,6 +186,19 @@ section swiper
 section.swiper {
     padding:-400px 0 -500px 0!important;
 }
+/*深度報導縮放*/
+
+.card.h-100 {
+    overflow:hidden;
+}
+.card.h-100 a img {
+    transform:scale(1,1);transition: all 1s ease-out;
+}
+
+.card.h-100 a img:hover {
+    transform:scale(1.2,1.2);
+}
+
 /*國旗縮放*/
 
 
