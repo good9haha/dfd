@@ -204,8 +204,7 @@ section#news.page-section.bg-light {
 }
 .card.h-100 a {
     displaY:block;
-    height:210px;
-    border: 1px solid red;
+    height:204px;
 }
 .card.h-100 a img {
     transform:scale(1,1);transition: all 1s ease-out;
@@ -222,6 +221,11 @@ section#news.page-section.bg-light {
     min-height:25rem;
 }
 
+.card-body a {
+    display:block;
+    height:210px;
+}
+
 /*
 資料來源
 **/
@@ -234,7 +238,7 @@ table.reference{
 }
 span.reference {
     margin:0 auto;
-}
+}w
 table.reference a{
    color:#94b05b;
    diplay:inline-block;
