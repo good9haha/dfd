@@ -190,6 +190,12 @@ section.swiper {
 .flag img{transform:scale(1,1);transition: all 1s ease-out;}
 .flag img:hover{transform:scale(1.2,1.2);}
 
+section.col-md-6.flag,
+section.col-md-6.leftline.flag {
+    padding:0 0;
+}
+
+
 /*
 
 portfolio
