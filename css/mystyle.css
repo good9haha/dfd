@@ -217,6 +217,14 @@ section.col-md-6.leftline.flag {
 }
 
 /*
+新聞
+*/
+
+section#news.page-section.bg-light {
+    padding:0 0 10px 0!important;
+}
+
+/*
 資料來源
 **/
 
