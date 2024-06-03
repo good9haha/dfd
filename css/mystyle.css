@@ -183,7 +183,12 @@ section swiper
 section.swiper {
     padding:-400px 0 -500px 0!important;
 }
+/*國旗縮放*/
 
+
+.flag{overflow:hidden;}
+.flag img{transform:scale(1,1);transition: all 1s ease-out;}
+.flag img:hover{transform:scale(1.2,1.2);}
 
 /*
 
