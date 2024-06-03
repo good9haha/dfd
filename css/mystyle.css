@@ -212,7 +212,7 @@ section#news.page-section.bg-light {
 }
 
 .card.h-100 a:hover img {
-    transform:scale(1.2,1.2);
+    transform:scale(1.1,1.1);
 }
 
 
@@ -223,7 +223,8 @@ section#news.page-section.bg-light {
 
 .card-body a {
     display:block;
-    height:220px;
+    height:225px;
+    border:1px solid red;
 }
 
 /*
