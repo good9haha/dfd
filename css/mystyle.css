@@ -107,11 +107,13 @@ text-align: center;
     padding: 2rem !important;
 }
 .btn-secondary {
-    background: #8db14e;.
-    border-color: #8db14e;
+    background: #404040;
+    
+    border-color: #404040;
+
 }
 .btn-secondary:hover {
-    background: #404040;
+    background: #8db14e;
 }
 
 /*時間軸圖底色*/
@@ -336,4 +338,12 @@ Portfolio
 
 .text-left {
     text-align:left;
+}
+
+.overflowtest {
+    padding: 30px 40px;
+    padding-bottom: 20px;
+    background-color: #8db14e2a;
+    border-radius: 30px;
+    font-family: 'Noto Serif TC', sans-serif;
 }
